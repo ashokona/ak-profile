@@ -27,11 +27,28 @@ html, body{
 .w-50 { width: 50%; }
 .w-60 { width: 60%; }
 
+.p-20 { padding: 20px; }
+.p-30 { padding: 30px; }
+
+.ff-ubuntu { font-family: 'Ubuntu', sans-serif; }
+.ff-roboto-mono { font-family: 'Roboto Mono', monospace; }
+.ff-roboto { font-family: 'Roboto', sans-serif; }
+
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+.fs-21 { font-size: 21px; }
+.fs-24 { font-size: 24px; }
+.fs-36 { font-size: 36px; }
+.fs-48 { font-size: 48px; }
+
 /* layout styles */
 .d-flex { display: flex; }
-.fd-row { display: flex; flex-direction: row; }
-.fd-row-reverse { display: flex; flex-direction: row-reverse; }
-.fd-column { display: flex; flex-direction: column; }
-.fd-column-reverse { display: flex; flex-direction: column-reverse; }
+.fd-row { display: flex; flex-direction: row; box-sizing: border-box; }
+.fd-row-reverse { display: flex; flex-direction: row-reverse; box-sizing: border-box; }
+.fd-column { display: flex; flex-direction: column; box-sizing: border-box; }
+.fd-column-reverse { display: flex; flex-direction: column-reverse; box-sizing: border-box; }
 .ai-center { align-items: center; }
 .jc-center { justify-content: center; }
+.jc-space-between { justify-content: space-between; }
+.jc-space-around { justify-content: space-around; }
+.jc-space-evenly { justify-content: space-evenly; }

@@ -7,27 +7,50 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet"> -->
     <script src='./js/script.js'></script>
 </head>
-<body>
+<body onload="attachSkills()">
     <div class="fd-column h-100 w-100">
         <div class="fd-row w-100" style="height: 65%;">
             <div class="fd-column w-100" style="width: 65%;">
                 <div class="fd-row w-100" style="height: 50%;">
-                    <div class="h-100 b-secondary" style="width: 65%;"></div>
+                    <div class="h-100 b-secondary fd-column jc-center ai-center" style="width: 65%;">
+                        <span class="ak-fade-back c-white ff-roboto-mono">AK</span>
+                        <span class="fs-48 c-white ff-roboto-mono">Ashok Kona</span>
+                        <span></span>
+                    </div>
                     <div class="h-100 b-primary p-relative" style="width: 35%;">
                         <div class="p-absolute ak-de-block d-flex ai-center jc-center">
-                            D E
+                            <div class="left h-100 ff-ubuntu fd-row ai-center jc-center" style="width: 50%;">
+                                <span class="c-primary">D</span>
+                                <span class="c-secondary">E</span>
+                            </div>
+                            <div class="right fd-column jc-space-between h-100 ff-roboto-mono c-white fs-21" style="width: 50%;">
+                                <span>sign</span>
+                                <span>velop</span>
+                                <span>ploy</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="fd-row w-100" style="height: 50%;">
-                    <div class="h-100" style="width: 35%;"></div>
-                    <div class="h-100 b-primary" style="width: 65%;"></div>
+                    <div class="h-100 b-primary" style="width: 35%;">
+                        <img src="./assests/ak-picture.png" alt="ak" class="w-100" >
+                    </div>
+                    <div class="h-100 b-primary fd-column ai-center jc-center p-30" style="width: 65%;">
+                        <span class="c-white ff-ubuntu fs-21">Hello, I’m a web-developer based on India. I have rich experience in web site design & building and customization.</span>
+                    </div>
                 </div>
             </div>  
             <div class="fd-row h-100" style="width: 35%;">
-
+                <div class="fd-column jc-space-around p-20 h-100 w-100 fs-18 c-primary ff-roboto-mono" id="ak-skills">
+                    <div class="fd-row jc-space-evenly"><span>React</span> <span>Jenkins</span></div>
+                    <div class="fd-row jc-space-evenly"><span>Jenkins</span></div>
+                    <div class="fd-row jc-space-around"><span>React</span> <span>Jenkins</span></div>
+                </div>
             </div>            
         </div>
         <div class="fd-row w-100" style="height: 35%;">
