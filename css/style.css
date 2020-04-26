@@ -1,0 +1,37 @@
+/* overide global css */
+html, body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+}
+
+/* blobal css */
+.b-primary { background: #2d2d2d;}
+.b-secondary { background: #F5D849;}
+.b-white { background: #FFFFFF;}
+
+.c-primary { color: #2d2d2d;}
+.c-secondary { color: #F5D849;}
+.c-white { color: #FFFFFF;}
+
+.p-relative { position: relative; }
+.p-absolute { position: absolute; }
+
+.h-100 { height: 100%; }
+.h-40 { height: 40%; }
+.h-50 { height: 50%; }
+.h-60 { height: 60%; }
+.w-100 { width: 100%; }
+.w-40 { width: 40%; }
+.w-50 { width: 50%; }
+.w-60 { width: 60%; }
+
+/* layout styles */
+.d-flex { display: flex; }
+.fd-row { display: flex; flex-direction: row; }
+.fd-row-reverse { display: flex; flex-direction: row-reverse; }
+.fd-column { display: flex; flex-direction: column; }
+.fd-column-reverse { display: flex; flex-direction: column-reverse; }
+.ai-center { align-items: center; }
+.jc-center { justify-content: center; }
