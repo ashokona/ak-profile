@@ -1,3 +1,31 @@
+.main-continer {
+
+}
+.top-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.top-container .left-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.top-container .right-container {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
 .ak-fade-back {
     font-size: 200px;
     opacity: 0.4;
@@ -22,3 +50,30 @@
 .ak-de-block .right {
     padding: 0 20px;
 }
+
+.ak-works-block .left{
+    /* margin-top: 8%;
+    height: 80%;
+    width: 47%; */
+    border-right: 2px solid rgba(245, 216, 73, 0.3);
+    border-top: 2px solid rgba(245, 216, 73, 0.3);
+    box-sizing: border-box;
+}
+
+.ak-works-block .right{
+    /* height: 80%;
+    width: 47%; */
+    border-left: 2px solid rgba(245, 216, 73, 0.3);
+    border-bottom: 2px solid rgba(245, 216, 73, 0.3);
+    box-sizing: border-box;
+}
+
+/* .h-primary {
+    border-bottom: 2px solid rgba(245, 216, 73, 1);
+} */
+
+.bb-50 { 
+    width: 50px;
+    margin-top:5px;
+    border-bottom: 2px solid rgba(245, 216, 73, 1);
+ }
