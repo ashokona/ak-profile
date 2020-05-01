@@ -92,13 +92,21 @@
 }
 
 .bottom-container .right-container {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    padding: 10px; 
+}
+
+.bottom-container .right-container .ak-info {
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 50%;
-    padding: 30px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
 }
 
 /* css for mobile view */
@@ -126,7 +134,8 @@
     .left-container .left-top-container {
         display: flex;
         flex-direction: row;
-        height: 50%;
+        /* height: 50%; */
+        height: 180px;
         width: 100%;
     }
     
@@ -195,16 +204,26 @@
         justify-content: space-between;
         width: 100%;
         height: 100%;
+        background-color: #2d2d2d;
     }
     
     .bottom-container .right-container {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        padding: 10px; 
+    }
+    
+    .bottom-container .right-container .ak-info {
         display: flex;
+        box-sizing: border-box;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100%;
         width: 100%;
-        padding: 30px;
+        border: 1px solid #FFFFFF;
+        padding: 20px;
     }
 }
 
@@ -237,14 +256,30 @@
 }
 
 .ak-works-block .left{
-    border-right: 2px solid rgba(245, 216, 73, 0.3);
-    border-top: 2px solid rgba(245, 216, 73, 0.3);
+    background-image: url('../assests/cops.png');
+    background-size: 100% 100%;
+    /* border-right: 2px solid rgba(245, 216, 73, 0.3);
+    border-top: 2px solid rgba(245, 216, 73, 0.3); */
     box-sizing: border-box;
 }
 
+/* .ak-works-block .left::after{
+    content: "";
+    background-image: url('../assests/cops.png');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+} */
+
 .ak-works-block .right{
-    border-left: 2px solid rgba(245, 216, 73, 0.3);
-    border-bottom: 2px solid rgba(245, 216, 73, 0.3);
+    background-image: url('../assests/anyday.png');
+    background-size: 100% 100%;
+    /* border-left: 2px solid rgba(245, 216, 73, 0.3);
+    border-bottom: 2px solid rgba(245, 216, 73, 0.3); */
     box-sizing: border-box;
 }
 

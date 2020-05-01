@@ -13,14 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
-<body onload="attachSkills()">
+<body onload="onLoad()">
     <div class="fd-column h-100 w-100 main-continer">
         <div class="top-container" style="height: 65%;">
             <div class="left-container">
                 <div class="left-top-container">
-                    <div class="b-secondary left-box">
+                    <div class="b-secondary left-box p-10">
                         <span class="ak-fade-back c-white ff-roboto-mono">AK</span>
                         <span class="fs-48 c-white ff-roboto-mono">Ashok Kona</span>
                         <span></span>
@@ -40,48 +41,62 @@
                         </div>
                     </div>
                 </div>
-                <div class="left-bottom-container">
+                <div class="left-bottom-container b-primary">
                     <div class="b-primary left-box">
                         <img src="./assests/ak-picture.png" alt="ak" class="w-100">
                     </div>
                     <div class="b-primary right-box">
-                        <span class="c-white ff-ubuntu fs-21">Hello, I’m a web-developer based on India. I have rich
-                            experience in web site design & building and customization.</span>
+                        <span class="c-white fs-21">
+                            I'm a Passionate Developer who can help you bring your idea to life,
+                             with modern design, fully functional and High avaliability.
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="right-container">
                 <div class="skills-container fs-18 c-primary ff-roboto-mono" id="word-cloud">
-                    <div class="fd-row jc-space-evenly"><span class="m-t-20">Serverless</span> <span>React</span></div>
+                    <div class="fd-row jc-space-evenly"><span class="m-t-20">Sketch</span> <span>HTML</span></div>
+                    <div class="fd-row jc-space-between"><span class="m-l-20 m-t-10">CSS</span> <span>JavaScript</span></div>
+                    <div class="fd-row jc-space-evenly"><span>DataVisualisation</span></div>
+                    <div class="fd-row jc-space-evenly"><span class="m-t-10">TypeScript</span> <span class="m-t-20">D3</span><span>React</span></div>
+                    <div class="fd-row jc-space-evenly"><span>Angular</span></div>
+                    <div class="fd-row jc-space-between"><span class="m-l-40 m-t-10">NodeJS</span> <span
+                            class="m-r-40">ExpressJS</span></div>
+                    <div class="fd-row jc-space-evenly"><span>Serverless</span></div>
+                    <div class="fd-row jc-space-evenly"><span>ELK</span> <span class="m-t-20">MongoDb</span></div>
+                    <div class="fd-row jc-space-evenly"><span>Git</span></div>
+                    <div class="fd-row jc-space-around"><span>AWS</span> <span class="m-t-20">Jenkins</span></div>
+                    <div class="fd-row jc-space-evenly"><span>Docker</span></div>
+                    <!-- <div class="fd-row jc-space-evenly"><span class="m-t-20">Serverless</span> <span>React</span></div>
                     <div class="fd-row jc-space-between"><span class="m-l-20 m-t-10">AWS</span> <span>HTML</span></div>
                     <div class="fd-row jc-space-evenly"><span>DataVisualisation</span></div>
                     <div class="fd-row jc-space-evenly"><span class="m-t-10">Jenkins</span> <span class="m-t-20">D3</span><span>Express</span></div>
                     <div class="fd-row jc-space-evenly"><span>JavaScript</span></div>
-                    <div class="fd-row jc-space-between"><span class="m-l-40 m-t-10">TypeScrit</span> <span
+                    <div class="fd-row jc-space-between"><span class="m-l-40 m-t-10">TypeScript</span> <span
                             class="m-r-40">Sketch</span></div>
                     <div class="fd-row jc-space-evenly"><span>Angular</span></div>
                     <div class="fd-row jc-space-evenly"><span>ELK</span> <span class="m-t-20">Docker</span></div>
                     <div class="fd-row jc-space-evenly"><span>MongoDB</span></div>
-                    <div class="fd-row jc-space-around"><span>CSS</span> <span class="m-t-20">Git</span></div>
+                    <div class="fd-row jc-space-around"><span>CSS</span> <span class="m-t-20">Git</span></div> -->
                     <!-- <div class="fd-row jc-space-evenly"><span>Angular</span></div> -->
                 </div>
             </div>
         </div>
         <div class="bottom-container">
             <div class="left-container b-white ak-works-block">
-                <div class="fd-column jc-space-between h-100" style="width: 47%;">
+                <div class="fd-column jc-space-between h-100" style="width: 49%;">
                     <h2 class="c-primary m-l-20">WORKS</h2>
-                    <div class="fd-column left p-20" style="height:80%">
-                        <span class="fs-24 fw-bold">Cloud Cops</span>
+                    <div class="fd-column cops left p-20" id="cops" style="height:80%">
+                        <span class="fs-24 fw-bold c-white link">Cloud Cops</span>
                         <span class="bb-50 m-b-10"></span>
-                        <span class="fs-18">Provide End to End Life
+                        <span class="fs-16 c-white">Provide End to End Life
                             Cycle Management
                             Service for Public Cloud</span>
                     </div>
                 </div>
-                <div class="fd-column jc-space-between h-100" style="width: 47%;">
+                <div class="fd-column jc-space-between h-100" style="width: 49%;">
                     <!-- <span>test</span> -->
-                    <div class="fd-column right p-20" style="height:80%">
+                    <div class="fd-column right anyday p-20 link" style="height:90%">
                         <span class="fs-24 fw-bold">Any Day</span>
                         <span class="bb-50 m-b-10"></span>
                         <span class="fs-18">
@@ -94,13 +109,15 @@
 
             </div>
             <div class="right-container b-secondary">
-                <span class="m-b-10 fs-24">Hyderabad, INDIA</span>
-                <span class="m-b-10 fs-24">ashokona@gmail.com</span>
-                <span class="m-b-10 fs-24">+91 703 231 4457</span>
-                <span class="m-b-10">
-                    <i class="fab fa-github-square c-white link fs-36 m-r-10"></i>
-                    <i class="fab fa-linkedin c-white link fs-36"></i>
-                </span>
+                <div class="ak-info">
+                    <span class="m-b-10 fs-16">Hyderabad, INDIA</span>
+                    <span class="m-b-10 fs-24">ashokona@gmail.com</span>
+                    <span class="m-b-10 fs-24">+91 703 231 4457</span>
+                    <span class="m-b-10">
+                        <i class="fab fa-github-square c-white link fs-36 m-r-10 linkedin"></i>
+                        <i class="fab fa-linkedin c-white link fs-36 github"></i>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
