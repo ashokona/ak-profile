@@ -109,6 +109,34 @@
     border: 1px solid #FFFFFF;
 }
 
+.ak-fade-back {
+    font-size: 200px;
+    opacity: 0.4;
+    position: absolute;
+    left: -25px;
+    top: -85px;
+}
+
+.ak-de-block {
+    width: 100%;
+    height: 45%;
+    left: -25%;
+    top: 25%;
+    /* font-size: 72px; */
+}
+
+.ak-de-block .left {
+    width: 50%;
+    border: 10px solid #FFFFFF;
+    font-size: 72px;
+}
+
+.ak-de-block .right {
+    width: 50%;
+    padding: 0 20px;
+    font-size: 21px;
+}
+
 /* css for mobile view */
 
 @media only screen and (max-width: 600px) {
@@ -225,41 +253,34 @@
         border: 1px solid #FFFFFF;
         padding: 20px;
     }
+
+    .ak-de-block {
+        width: 100%;
+        height: 45%;
+        left: -35%;
+        top: 25%;
+        /* font-size: 72px; */
+    }
+    
+    .ak-de-block .left {
+        width: 65%;
+        border: 6px solid #FFFFFF;
+        font-size: 48px;
+    }
+    
+    .ak-de-block .right {
+        width: 35%;
+        padding: 0 10px;
+        font-size: 18px;
+    }
 }
 
 /* css for mobile view */
 
 
-.ak-fade-back {
-    font-size: 200px;
-    opacity: 0.4;
-    position: absolute;
-    left: -25px;
-    top: -85px;
-}
-
-.ak-de-block {
-    width: 100%;
-    height: 45%;
-    left: -25%;
-    top: 25%;
-    /* font-size: 72px; */
-}
-
-.ak-de-block .left {
-    border: 10px solid #FFFFFF;
-    font-size: 72px;
-}
-
-.ak-de-block .right {
-    padding: 0 20px;
-}
-
 .ak-works-block .left{
     background-image: url('../assests/cops.png');
     background-size: 100% 100%;
-    /* border-right: 2px solid rgba(245, 216, 73, 0.3);
-    border-top: 2px solid rgba(245, 216, 73, 0.3); */
     box-sizing: border-box;
 }
 
